@@ -2,7 +2,9 @@
 
 cd /var/lib/wildfly
 
-JAVA_OPTS=$(cat /etc/container_environment/JAVA_OPTS)
+JAVA_XMS=$(cat /etc/container_environment/JAVA_XMS)
+JAVA_XMX=$(cat /etc/container_environment/JAVA_XMX)
+JAVA_OPTS="-Xms${JAVA_XMS} -Xmx${JAVA_XMX} $(cat /etc/container_environment/JAVA_OPTS)"
 SERVER_OPTS=$(cat /etc/container_environment/SERVER_OPTS)
 SERVER_PARAMS=$(cat /etc/container_environment/SERVER_PARAMS)
 

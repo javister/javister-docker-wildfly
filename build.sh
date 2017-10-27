@@ -18,6 +18,6 @@ docker build \
     ${PROXY_ARGS} \
     .
 
-#docker push ${IMAGE_TAG}:latest
-#docker push ${IMAGE_TAG}:${VERSION}
-#docker push ${IMAGE_TAG}:${VERSION}-${DATE}
+docker push ${IMAGE_TAG}:latest
+docker push ${IMAGE_TAG}:${WILDFLY_VERSION}-${WILDFLY_CLASSIFIER}
+docker push ${IMAGE_TAG}:${WILDFLY_VERSION}-${WILDFLY_CLASSIFIER}-${DATE}

@@ -20,8 +20,8 @@ RUN . /usr/local/sbin/proxyenv && \
     chmod --recursive +x /etc/my_init.d/*.sh /etc/service
 
 ENV JAVA_XMS="64m" \
-    JAVA_XMX="512m"
-ENV JAVA_OPTS="$JVM_OPTS -Xms$JAVA_XMS -Xmx$JAVA_XMX -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true" \
+    JAVA_XMX="512m" \
+    JAVA_OPTS="$JVM_OPTS -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true" \
     SERVER_PARAMS="--server-config=standalone-full.xml"
 
 WORKDIR /var/lib/wildfly
