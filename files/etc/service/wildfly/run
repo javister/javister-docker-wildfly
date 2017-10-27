@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+cd /var/lib/wildfly
+
+JAVA_OPTS=$(cat /etc/container_environment/JAVA_OPTS)
+SERVER_OPTS=$(cat /etc/container_environment/SERVER_OPTS)
+SERVER_PARAMS=$(cat /etc/container_environment/SERVER_PARAMS)
+
+exec setuser system ./bin/standalone.sh ${SERVER_PARAMS}
