@@ -5,7 +5,17 @@ cd /var/lib/wildfly
 JAVA_XMS=$(cat /etc/container_environment/JAVA_XMS)
 JAVA_XMX=$(cat /etc/container_environment/JAVA_XMX)
 JAVA_OPTS="-Xms${JAVA_XMS} -Xmx${JAVA_XMX} $(cat /etc/container_environment/JAVA_OPTS)"
-SERVER_OPTS=$(cat /etc/container_environment/SERVER_OPTS)
+[ -e /etc/container_environment/SERVER_OPTS ] && SERVER_OPTS=$(cat /etc/container_environment/SERVER_OPTS)
 SERVER_PARAMS=$(cat /etc/container_environment/SERVER_PARAMS)
+HOSTIP=$(cat /etc/container_environment/HOSTIP)
+WILDFLY_CONFIG_DIR=$(cat /etc/container_environment/WILDFLY_CONFIG_DIR)
+WILDFLY_DATA_DIR=$(cat /etc/container_environment/WILDFLY_DATA_DIR)
+WILDFLY_LOG_DIR=$(cat /etc/container_environment/WILDFLY_LOG_DIR)
 
-exec setuser system ./bin/standalone.sh ${SERVER_PARAMS}
+exec setuser system ./bin/standalone.sh \
+    -b=${HOSTIP} \
+    -bmanagement=${HOSTIP} \
+    -Djboss.server.config.dir=${WILDFLY_CONFIG_DIR} \
+    -Djboss.server.data.dir=${WILDFLY_DATA_DIR} \
+    -Djboss.server.log.dir=${WILDFLY_LOG_DIR} \
+    ${SERVER_PARAMS}

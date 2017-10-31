@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+/var/lib/wildfly/bin/jboss-cli.sh --connect --controller=${HOSTIP}:9990 "$@"

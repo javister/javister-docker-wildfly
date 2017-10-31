@@ -16,6 +16,7 @@ docker build \
     --tag ${IMAGE_TAG}:${WILDFLY_VERSION}-${WILDFLY_CLASSIFIER} \
     --tag ${IMAGE_TAG}:${WILDFLY_VERSION}-${WILDFLY_CLASSIFIER}-${DATE} \
     ${PROXY_ARGS} \
+    $@ \
     .
 
 docker push ${IMAGE_TAG}:latest
