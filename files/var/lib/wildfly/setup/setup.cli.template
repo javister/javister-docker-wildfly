@@ -1,3 +1,7 @@
+if (outcome==success) of /path=jboss.server.deployments.dir/:read-resource
+    /path=jboss.server.deployments.dir/:remove
+end-if
+
 batch
     /path=jboss.server.deployments.dir:add(path=/config/wildfly/deployments)
     /subsystem=deployment-scanner/scanner=default:write-attribute(name=path, value=.)
