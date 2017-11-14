@@ -58,6 +58,12 @@ EOF
     [ "${release}" == "release" ] && docker push ${IMAGE_TAG}:${WILDFLY_VERSION}-${WILDFLY_CLASSIFIER}-${DATE}
 }
 
+CURRENT_DIR=$(pwd)
+
+if [ -d ${CURRENT_DIR}/tmp ]; then
+    rm -rf ${CURRENT_DIR}/tmp
+fi
+
 trap "exit 1" INT TERM QUIT
 
 build "$@"
