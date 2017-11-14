@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd /var/lib/wildfly
+cd /app/wildfly
 
 JAVA_XMS=$(cat /etc/container_environment/JAVA_XMS)
 JAVA_XMX=$(cat /etc/container_environment/JAVA_XMX)
