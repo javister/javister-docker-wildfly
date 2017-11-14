@@ -26,8 +26,7 @@ RUN . /usr/local/sbin/proxyenv && \
     https_proxy=$https_proxy no_proxy=$no_proxy curl -s "http://artifactory.krista.ru/artifactory/maven-krista-nexus-open-source/ru/krista/wildfly-bas/$WILDFLY_VERSION/wildfly-bas-$WILDFLY_VERSION-$WILDFLY_CLASSIFIER.zip" > /tmp/wildfly.zip && \
     unzip /tmp/wildfly.zip -d /tmp/wildfly && \
     bash -c 'DIR=$(ls -1 /tmp/wildfly/); cp --archive --recursive --verbose /tmp/wildfly/${DIR}/* /app/wildfly/' && \
-    chmod --changes 777 $(find /app/wildfly/standalone -type d) && \
-    chmod --changes 666 $(find /app/wildfly/standalone -type f) && \
+    chmod --recursive a+w /app/wildfly && \
     yum-clean && \
     rm --recursive --force /tmp/* && \
     chmod --recursive --changes +x /etc/my_init.d/*.sh /etc/service /usr/local/bin
