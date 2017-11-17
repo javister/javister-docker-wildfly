@@ -20,7 +20,7 @@ ENV JAVA_XMS="64m" \
     ADMIN_PASSWD="masterkey" \
     RPMLIST="libaio"
 
-RUN . /usr/local/sbin/proxyenv && \
+RUN . /usr/local/bin/proxyenv && \
     yum-install && \
     mkdir --parents /app/wildfly && \
     https_proxy=$https_proxy no_proxy=$no_proxy curl -s "http://artifactory.krista.ru/artifactory/maven-krista-nexus-open-source/ru/krista/wildfly-bas/$WILDFLY_VERSION/wildfly-bas-$WILDFLY_VERSION-$WILDFLY_CLASSIFIER.zip" > /tmp/wildfly.zip && \
