@@ -13,8 +13,6 @@ fi
 
 mkdir --parents /config/wildfly/deployments
 chown --recursive system:system /config/wildfly
-#chmod --changes 777 $(find /app/wildfly/standalone -type d)
-#chmod --changes 666 $(find /app/wildfly/standalone -type f)
 
 expandenv /app/wildfly/setup/setup.cli.template > /app/wildfly/setup/setup.cli
 
