@@ -1,0 +1,24 @@
+sudo: required
+services:
+  - docker
+addons:
+  apt:
+    packages:
+      - docker-ce
+env:
+  global:
+    - REGISTRY_USER=vektory79
+    - secure: F6FetXkVOaJa2XX5BMMbLE3O+I8SMM3kH/vsGI2J2HMbNfMoDIQBFA1WUKMzwhaoAJ98tkhpcIBhdsNikiAfUfuIT4yYikX78O0SETJZ3ynFtYX7zOqbEJlcw3DjEvs/+SEjry97L8bnVSmuPwX3ghicay7DCzMXX9rdvQjwRvs26+oYaMx/AsZKTZ4PR62ESE+V81jm4a+PofJoSvqVpVz6OaAFhBxajm6ISOb+8WZMXI3EH8Wz6olhdkYA6tmO0fycq/y/x5bMxaG4khM/5PV13BfX2K99dmly12sJprMQVFY5MhofByBUc6HOQSPCz1249ZaH0rt9ASmjys3zeSeNoDCbBvKio34bTIvwHbxOqvyr+NUbB01B/MPAOg/ys0KRAdKp6huBWo6Z9yhz7hXU8XRsnRPDsJMtO62iys+9d0W5SBuC0sq8YTsYH1TQcHBw3oEwslMpX/K9aQ2ab6h8d+NJXm+2RQWtqigs01liZIoyNifVEiLcJRd1UWn4pR7KEBxxDDUgLGoMZkNSscuc0aH5ur8jqWVC19QjyI7NNxSsh105PEWzjL5uDZtSp1DAi6EGo+tRc9GOND8mXeYPi1yUlPfIO58ljGU75OsueMnpY3gXQpd0fNQtRESzjE855XOBbPkz4bThTxrWQuj0wiyZcNIO1dxBiWzHJEI=
+script:
+  - ./build.sh -p
+
+after_script:
+  - docker images
+before_deploy:
+  - docker login -u "$REGISTRY_USER" -p "$REGISTRY_PASS" javister-docker-docker.bintray.io
+
+deploy:
+  provider: script
+  script: ./build.sh -prd
+  on:
+    branch: master

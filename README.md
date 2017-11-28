@@ -1,6 +1,7 @@
 # Сервер JBoss Wildfly 8
 
 [ ![Download](https://api.bintray.com/packages/javister/docker/javister%3Ajavister-docker-wildfly/images/download.svg) ](https://bintray.com/javister/docker/javister%3Ajavister-docker-wildfly/_latestVersion)
+[![Build Status](https://travis-ci.org/javister/javister-docker-wildfly.svg?branch=master)](https://travis-ci.org/javister/javister-docker-wildfly)
 
 Данный образ базируется на образе [javister-docker-openjdk:1.0.java8](https://github.com/javister/javister-docker-openjdk).
 
