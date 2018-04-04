@@ -14,10 +14,10 @@ fi
 mkdir --parents /config/wildfly/deployments
 chown --recursive system:system /config/wildfly
 
-exec setuser system bash -c "/app/wildfly/bin/add-user.sh \
+exec setuser system /app/wildfly/bin/add-user.sh \
     --confirm-warning \
     --enable \
     -sc ${WILDFLY_CONFIG_DIR} \
-    --realm 'ManagementRealm' \
+    --realm "ManagementRealm" \
     --user ${ADMIN_LOGIN} \
-    --password ${ADMIN_PASSWD}"
+    --password ${ADMIN_PASSWD}
