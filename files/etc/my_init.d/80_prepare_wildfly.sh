@@ -21,3 +21,8 @@ exec setuser system /app/wildfly/bin/add-user.sh \
     --realm "ManagementRealm" \
     --user ${ADMIN_LOGIN} \
     --password ${ADMIN_PASSWD}
+
+rm -f /config/wildfly/deployments/*.isdeploying
+rm -f /config/wildfly/deployments/*.deployed
+rm -f /config/wildfly/deployments/*.failed
+
