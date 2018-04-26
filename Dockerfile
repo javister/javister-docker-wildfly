@@ -41,3 +41,6 @@ WORKDIR /app/wildfly
 # 8009 - ajp
 # 8787 - debug
 EXPOSE 8080 8443 9990 9993 8009 8787
+
+HEALTHCHECK --interval=5s --timeout=3s --start-period=3m \
+    CMD healthcheck-wildfly.sh
