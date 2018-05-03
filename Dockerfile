@@ -11,7 +11,7 @@ COPY files /
 
 ENV JAVA_XMS="64m" \
     JAVA_XMX="512m" \
-    JAVA_OPTS="$JVM_OPTS -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true" \
+    JAVA_OPTS="$JVM_OPTS -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true " \
     SERVER_PARAMS="--server-config=standalone-full.xml" \
     WILDFLY_CONFIG_DIR="/config/wildfly/config" \
     WILDFLY_DATA_DIR="/config/wildfly/data" \
