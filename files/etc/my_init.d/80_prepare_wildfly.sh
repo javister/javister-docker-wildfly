@@ -14,6 +14,10 @@ fi
 mkdir --parents /config/wildfly/deployments
 chown --recursive system:system /config/wildfly
 
+rm -f /config/wildfly/deployments/*.isdeploying
+rm -f /config/wildfly/deployments/*.deployed
+rm -f /config/wildfly/deployments/*.failed
+
 exec setuser system /app/wildfly/bin/add-user.sh \
     --confirm-warning \
     --enable \
@@ -21,8 +25,3 @@ exec setuser system /app/wildfly/bin/add-user.sh \
     --realm "ManagementRealm" \
     --user ${ADMIN_LOGIN} \
     --password ${ADMIN_PASSWD}
-
-rm -f /config/wildfly/deployments/*.isdeploying
-rm -f /config/wildfly/deployments/*.deployed
-rm -f /config/wildfly/deployments/*.failed
-
