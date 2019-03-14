@@ -21,6 +21,7 @@ rm -f /config/wildfly/deployments/*.failed
 exec setuser system /app/wildfly/bin/add-user.sh \
     --confirm-warning \
     --enable \
+    --silent \
     -sc ${WILDFLY_CONFIG_DIR} \
     --realm "ManagementRealm" \
     --user ${ADMIN_LOGIN} \
