@@ -11,9 +11,11 @@ if [ ! -d /config/wildfly/config ]; then
     cp --archive --recursive /app/wildfly/standalone/configuration/* /config/wildfly/config/
 fi
 
+mkdir --parents /config/diagnostics
 mkdir --parents /config/wildfly/deployments
 chown --recursive system:system /config/wildfly
 
+rm -f /config/diagnostics/*
 rm -f /config/wildfly/deployments/*.isdeploying
 rm -f /config/wildfly/deployments/*.deployed
 rm -f /config/wildfly/deployments/*.failed
