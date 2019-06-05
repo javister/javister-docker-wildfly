@@ -13,6 +13,8 @@ fi
 
 mkdir --parents /config/diagnostics
 mkdir --parents /config/wildfly/deployments
+
+chown --recursive system:system /config/diagnostics
 chown --recursive system:system /config/wildfly
 
 rm -f /config/diagnostics/*
