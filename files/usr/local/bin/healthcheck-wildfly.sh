@@ -8,13 +8,9 @@ while true; do
     deployed=$(ls -1 *.deployed 2> /dev/null | wc -l)
     failed=$(ls -1 *.failed 2> /dev/null | wc -l)
 
-    if [ ${failed} -gt 0 ]; then
-        exit 1
-    fi
-
     if [ ${deployments} -gt 0 -a ${deployments} -eq ${deployed} ]; then
         exit 0
     fi
 
-    sleep 1
+    exit 1
 done
