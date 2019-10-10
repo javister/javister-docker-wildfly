@@ -53,14 +53,29 @@ EOF
     docker build \
         ${doPull} \
         ${useCache} \
-        --tag ${IMAGE_TAG}:latest \
+        --build-arg WILDFLY_VERSION=${WILDFLY_VERSION} \
+        --build-arg WILDFLY_CLASSIFIER=${WILDFLY_CLASSIFIER} \
         --tag ${IMAGE_TAG}:${VERSION} \
         ${PROXY_ARGS} \
         $@ \
         .
 
-    [ "${release}" == "release" ] && docker push ${IMAGE_TAG}:latest || true
     [ "${release}" == "release" ] && docker push ${IMAGE_TAG}:${VERSION} || true
+
+
+    [ "${doPull}" ] && docker pull ${IMAGE_TAG}:${VERSION_MODESHAPE} || true
+
+    docker build \
+        ${doPull} \
+        ${useCache} \
+        --build-arg WILDFLY_VERSION=${WILDFLY_VERSION} \
+        --build-arg WILDFLY_CLASSIFIER=${WILDFLY_CLASSIFIER_MODESHAPE} \
+        --tag ${IMAGE_TAG}:${VERSION_MODESHAPE} \
+        ${PROXY_ARGS} \
+        $@ \
+        .
+
+    [ "${release}" == "release" ] && docker push ${IMAGE_TAG}:${VERSION_MODESHAPE} || true
 
     if [ "${downstream}" == "yes" ]; then
         while read -u 10 repo; do
