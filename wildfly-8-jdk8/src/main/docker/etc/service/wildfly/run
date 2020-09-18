@@ -13,6 +13,7 @@ HOSTIP=$(cat /etc/container_environment/HOSTIP)
 WILDFLY_CONFIG_DIR=$(cat /etc/container_environment/WILDFLY_CONFIG_DIR)
 WILDFLY_DATA_DIR=$(cat /etc/container_environment/WILDFLY_DATA_DIR)
 WILDFLY_LOG_DIR=$(cat /etc/container_environment/WILDFLY_LOG_DIR)
+WILDFLY_TMP_DIR=$(cat /etc/container_environment/WILDFLY_TMP_DIR)
 
 exec setuser system ./bin/standalone.sh \
     -b=${HOSTIP} \
@@ -20,4 +21,5 @@ exec setuser system ./bin/standalone.sh \
     -Djboss.server.config.dir=${WILDFLY_CONFIG_DIR} \
     -Djboss.server.data.dir=${WILDFLY_DATA_DIR} \
     -Djboss.server.log.dir=${WILDFLY_LOG_DIR} \
+    -Djboss.server.temp.dir=${WILDFLY_TMP_DIR} \
     ${SERVER_PARAMS}

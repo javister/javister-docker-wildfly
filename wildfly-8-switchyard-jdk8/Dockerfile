@@ -11,6 +11,7 @@ ENV JAVA_XMS="64m" \
     WILDFLY_CONFIG_DIR="/config/wildfly/config" \
     WILDFLY_DATA_DIR="/config/wildfly/data" \
     WILDFLY_LOG_DIR="/config/wildfly/log" \
+    WILDFLY_TMP_DIR="/config/wildfly/tmp" \
     ADMIN_LOGIN="admin" \
     ADMIN_PASSWD="masterkey" \
     BASE_RPMLIST="$BASE_RPMLIST libaio"

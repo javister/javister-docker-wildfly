@@ -11,6 +11,7 @@ exec setuser system ./bin/standalone.sh \
     -Djboss.server.config.dir=${WILDFLY_CONFIG_DIR} \
     -Djboss.server.data.dir=${WILDFLY_DATA_DIR} \
     -Djboss.server.log.dir=${WILDFLY_LOG_DIR} \
+    -Djboss.server.temp.dir=${WILDFLY_TMP_DIR} \
     ${SERVER_PARAMS} &
 wait4tcp -w 200 ${HOSTIP} 9990
 WILDFLY_PID=`ps -ef | grep -e "\\[Standalone\\]" | awk '{print $2}'`
