@@ -1,0 +1,25 @@
+######################################################################################
+if (outcome==success) of /subsystem=datasources/data-source=hibernate4-quickstart/:read-resource
+    /subsystem=datasources/data-source=hibernate4-quickstart/:remove
+end-if
+batch
+    /subsystem=datasources/data-source=hibernate4-quickstart/:add( \
+        connection-url=jdbc:postgresql://${POSTGRES_ADDR}:${POSTGRES_PORT}/${POSTGRES_DB_NAME}, \
+        jndi-name=java:jboss/datasources/HibernateQuickstartDS, \
+        driver-name=postgresql.jar, \
+        driver-class=org.postgresql.Driver, \
+        jta=true, \
+        user-name=${POSTGRES_USER}, \
+        password=${POSTGRES_PASS}, \
+        allow-multiple-users=false, \
+        share-prepared-statements=false, \
+        background-validation=false, \
+        validate-on-match=true, \
+        check-valid-connection-sql="SELECT 1", \
+        min-pool-size=1, \
+        max-pool-size=10, \
+        use-ccm=false \
+    )
+
+    /subsystem=datasources/data-source=hibernate4-quickstart/:enable(persistent=true)
+run-batch

@@ -1,0 +1,90 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>wildfly-root</artifactId>
+    <version>${revision}${sha1}${changelist}</version>
+    <packaging>pom</packaging>
+    <name>${project.groupId}:${project.artifactId}</name>
+
+    <parent>
+        <artifactId>base-root</artifactId>
+        <groupId>com.github.javister.docker</groupId>
+        <version>2.6</version>
+    </parent>
+    
+    <scm>
+        <connection>scm:git:https://github.com/javister/javister-docker-wildfly.git</connection>
+    </scm>
+
+    <ciManagement>
+        <system>GitHub</system>
+        <url>https://github.com/javister/javister-docker-wildfly/actions</url>
+    </ciManagement>
+
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/javister/javister-docker-wildfly/issues</url>
+    </issueManagement>
+
+    <properties>
+        <!-- Project Version -->
+        <revision>1.0</revision>
+        <changelist>-SNAPSHOT</changelist>
+        <sha1/>
+        <!-- Settings -->
+        <docker.image.artifactId>javister-docker-wildfly</docker.image.artifactId>
+        <!-- Dependency versions -->
+        <javister-docker-openjdk8.version>1.2</javister-docker-openjdk8.version>
+        <postgresql.version>1.4</postgresql.version>
+        <wildfly-8.version>8.2.1.krista22</wildfly-8.version>
+        <bas-8.version>8.2.1.krista45</bas-8.version>
+    </properties>
+
+    <modules>
+        <module>wildfly-8-switchyard-jdk8</module>
+        <module>wildfly-8-switchyard.modeshape-jdk8</module>
+        <module>wildfly-8-jdk8</module>
+        <module>testing</module>
+        <module>tests</module>
+        <!--
+        <module>tests</module>
+        -->
+    </modules>
+
+    <distributionManagement>
+        <repository>
+            <id>bintray-javister</id>
+            <name>javister-dockertesting</name>
+            <url>https://api.bintray.com/maven/javister/dockertesting/javister-docker-wildfly/;publish=1</url>
+        </repository>
+    </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>central</name>
+            <url>https://jcenter.bintray.com</url>
+        </repository>
+        <repository>
+            <id>bintray-javister-dockertesting</id>
+            <name>bintray</name>
+            <url>https://dl.bintray.com/javister/dockertesting</url>
+        </repository>
+        <repository>
+            <id>krista-oss</id>
+            <name>krista-oss</name>
+            <url>http://artifactory.krista.ru/artifactory/maven-krista-nexus-open-source</url>
+        </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <name>central</name>
+            <url>https://jcenter.bintray.com</url>
+        </pluginRepository>
+    </pluginRepositories>
+</project>

@@ -1,0 +1,26 @@
+if (outcome==success) of /path=jboss.server.deployments.dir/:read-resource
+    /path=jboss.server.deployments.dir/:remove
+end-if
+
+batch
+    /path=jboss.server.deployments.dir:add(path=/config/wildfly/deployments)
+    /subsystem=deployment-scanner/scanner=default:write-attribute(name=path, value=.)
+    /subsystem=deployment-scanner/scanner=default:write-attribute(name=relative-to, value=jboss.server.deployments.dir)
+    /subsystem=transactions:write-attribute(name=node-identifier, value=${HOSTNAME})
+run-batch
+
+if (outcome==success) of /subsystem=logging/logger=jacorb/:read-resource
+    /subsystem=logging/logger=jacorb/:remove
+end-if
+
+if (outcome==success) of /subsystem=logging/logger=jacorb.config/:read-resource
+    /subsystem=logging/logger=jacorb.config/:remove
+end-if
+
+if (outcome==success) of /subsystem=jacorb/:read-resource
+    /subsystem=jacorb/:remove
+end-if
+
+if (outcome==success) of /extension=org.jboss.as.jacorb/:read-resource
+    /extension=org.jboss.as.jacorb/:remove
+end-if

@@ -1,7 +1,8 @@
-FROM javister-docker-docker.bintray.io/javister/javister-docker-openjdk:1.1.java8
+ARG JAVISTER_OPENJDK_VERSION
+FROM javister-docker-docker.bintray.io/javister/javister-docker-openjdk:${JAVISTER_OPENJDK_VERSION}
 MAINTAINER Viktor Verbitsky <vektory79@gmail.com>
 
-COPY files /
+COPY src/main/docker /
 
 ENV JAVA_XMS="64m" \
     JAVA_XMX="512m" \
@@ -35,15 +36,7 @@ HEALTHCHECK --interval=10s --timeout=3s --start-period=3m \
     CMD healthcheck-wildfly.sh
 
 ARG WILDFLY_VERSION
-ARG WILDFLY_CLASSIFIER
 
-LABEL wildfly-version=$WILDFLY_VERSION \
-      wildfly-classifier=$WILDFLY_CLASSIFIER
+LABEL wildfly-version=$WILDFLY_VERSION
 
-RUN . /usr/local/bin/proxyenv && \
-    mkdir --parents /app/wildfly && \
-    https_proxy=$https_proxy no_proxy=$no_proxy curl -s "http://artifactory.krista.ru/artifactory/maven-krista-nexus-open-source/ru/krista/wildfly-bas/${WILDFLY_VERSION}/wildfly-bas-${WILDFLY_VERSION}-${WILDFLY_CLASSIFIER}.zip" > /tmp/wildfly.zip && \
-    unzip -q /tmp/wildfly.zip -d /tmp/wildfly && \
-    bash -c 'DIR=$(ls -1 /tmp/wildfly/); cp --archive --recursive /tmp/wildfly/${DIR}/* /app/wildfly/' && \
-    chmod --recursive a+w /app/wildfly && \
-    rm --recursive --force /tmp/*
+ADD --chown=system:system target/dependency/wildfly-${WILDFLY_VERSION}/ /app/wildfly/

@@ -5,7 +5,32 @@
 
 Данный образ базируется на образе [javister-docker-openjdk:1.0.java8](https://github.com/javister/javister-docker-openjdk).
 
-Содержимое, добавляемое данным образом:
+## Варианты образа
+
+Формирование тега образа происходит следующим образом:
+
+```
+${wildfly.version}-${wildfly.layers}-${jdk.version}-${project.version}
+```
+
+1. ${wildfly.version} - Версии Wildfly
+    1. 8.2.1.krista43
+2. ${wildfly.layers} - Дополнительные слои Wildfly
+    1. (Чистая, позиция не заполнена)
+    2. SwitchYard
+    3. SwitchYard.Modeshape5
+3. ${jdk.version} - Версии Java
+    1. jdk8
+    2. jdk11
+4. ${project.version} - Собственные версии образа (версии данного проекта)
+
+Примеры:
+
+* `8.2.1.krista43-SwitchYard-jdk8-1.0`
+* `8.2.1.krista43-jdk11-1.0`
+* `8.2.1.krista43-SwitchYard.Modeshape5-jdk8-1.0`
+
+## Содержимое, добавляемое данным образом
 
 1. Сервер [JBoss Wildfly 8](http://wildfly.org/) с исправлениями для обеспечения стабильности работы и некоторыми дополнительными подсистемами:
     1. [JBoss SwitchYard 2.0](http://switchyard.jboss.org/)

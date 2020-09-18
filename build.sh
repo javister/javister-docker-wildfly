@@ -45,37 +45,9 @@ EOF
     done
     shift $((OPTIND-1))
 
-    PROXY_ARGS="--build-arg http_proxy=${http_proxy} \
-                --build-arg no_proxy=${no_proxy}"
-
-    [ "${doPull}" ] && docker pull ${IMAGE_TAG}:${VERSION} || true
-
-    docker build \
-        ${doPull} \
-        ${useCache} \
-        --build-arg WILDFLY_VERSION=${WILDFLY_VERSION} \
-        --build-arg WILDFLY_CLASSIFIER=${WILDFLY_CLASSIFIER} \
-        --tag ${IMAGE_TAG}:${VERSION} \
-        ${PROXY_ARGS} \
-        $@ \
-        .
+    mvn -B ${release}
 
     [ "${release}" == "release" ] && docker push ${IMAGE_TAG}:${VERSION} || true
-
-
-    [ "${doPull}" ] && docker pull ${IMAGE_TAG}:${VERSION_MODESHAPE} || true
-
-    docker build \
-        ${doPull} \
-        ${useCache} \
-        --build-arg WILDFLY_VERSION=${WILDFLY_VERSION} \
-        --build-arg WILDFLY_CLASSIFIER=${WILDFLY_CLASSIFIER_MODESHAPE} \
-        --tag ${IMAGE_TAG}:${VERSION_MODESHAPE} \
-        ${PROXY_ARGS} \
-        $@ \
-        .
-
-    [ "${release}" == "release" ] && docker push ${IMAGE_TAG}:${VERSION_MODESHAPE} || true
 
     if [ "${downstream}" == "yes" ]; then
         while read -u 10 repo; do
