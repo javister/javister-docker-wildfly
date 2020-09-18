@@ -1,0 +1,35 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "com.github.javister.docker.testing.wildfly.HibernateIT",
+    "children" : [ {
+      "name" : "testRegisterUsers",
+      "uid" : "d0bfa83093675ab5",
+      "parentUid" : "1d23b708eb73de6e88c98367f6db7c9c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1600465372439,
+        "stop" : 1600465438554,
+        "duration" : 66115
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testRegisterUsers",
+      "uid" : "597e5a11a5d760e1",
+      "parentUid" : "1d23b708eb73de6e88c98367f6db7c9c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1600465438776,
+        "stop" : 1600465469939,
+        "duration" : 31163
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "com.github.javister.docker.testing.wildfly.HibernateIT"
+  } ],
+  "name" : "packages"
+}

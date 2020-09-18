@@ -1,0 +1,80 @@
+{
+  "uid" : "597e5a11a5d760e1",
+  "name" : "[2] FIREFOX",
+  "fullName" : "com.github.javister.docker.testing.wildfly.HibernateIT.testRegisterUsers",
+  "historyId" : "eea9541a2584fa203a424ccc7811e15",
+  "time" : {
+    "start" : 1600465438776,
+    "stop" : 1600465469939,
+    "duration" : 31163
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ee630a4d5de2b3da",
+      "name" : "PASSED-com.github.javister.docker.testing.wildfly.HibernateIT.testRegisterUsers-FIREFOX-20200918-214428.flv",
+      "source" : "ee630a4d5de2b3da.flv",
+      "type" : "video/x-flv",
+      "size" : 1232896
+    }, {
+      "uid" : "a88442ef378f7df1",
+      "name" : "Stdout",
+      "source" : "a88442ef378f7df1.txt",
+      "type" : "text/plain",
+      "size" : 1733
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az76"
+  }, {
+    "name" : "thread",
+    "value" : "5760@fv-az76.ForkJoinPool-1-worker-1(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "com.github.javister.docker.testing.wildfly.HibernateIT"
+  }, {
+    "name" : "testClass",
+    "value" : "com.github.javister.docker.testing.wildfly.HibernateIT"
+  }, {
+    "name" : "testMethod",
+    "value" : "testRegisterUsers"
+  }, {
+    "name" : "suite",
+    "value" : "com.github.javister.docker.testing.wildfly.HibernateIT"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "597e5a11a5d760e1.json",
+  "parameterValues" : [ ]
+}
