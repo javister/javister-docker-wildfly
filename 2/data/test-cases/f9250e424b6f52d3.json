@@ -1,0 +1,91 @@
+{
+  "uid" : "f9250e424b6f52d3",
+  "name" : "HibernateIT",
+  "fullName" : "com.github.javister.docker.testing.wildfly.HibernateIT",
+  "historyId" : "3538193c456e6a6b2504deb27ca0c0eb",
+  "time" : {
+    "start" : 1600462492143,
+    "stop" : 1600462492145,
+    "duration" : 2
+  },
+  "description" : "",
+  "status" : "broken",
+  "statusMessage" : "Container startup failed",
+  "statusTrace" : "org.testcontainers.containers.ContainerLaunchException: Container startup failed\n\tat org.testcontainers.containers.GenericContainer.doStart(GenericContainer.java:330)\n\tat org.testcontainers.containers.GenericContainer.start(GenericContainer.java:311)\n\tat com.github.javister.docker.testing.wildfly.JavisterWildflyContainer.start(JavisterWildflyContainer.java:167)\n\tat com.github.javister.docker.testing.wildfly.containers.WildflyHibernateContainer.start(WildflyHibernateContainer.java:87)\n\tat org.testcontainers.junit.jupiter.TestcontainersExtension$StoreAdapter.start(TestcontainersExtension.java:242)\n\tat org.testcontainers.junit.jupiter.TestcontainersExtension$StoreAdapter.access$200(TestcontainersExtension.java:229)\n\tat org.testcontainers.junit.jupiter.TestcontainersExtension.lambda$null$1(TestcontainersExtension.java:59)\n\tat org.junit.jupiter.engine.execution.ExtensionValuesStore.lambda$getOrComputeIfAbsent$4(ExtensionValuesStore.java:86)\n\tat org.junit.jupiter.engine.execution.ExtensionValuesStore$MemoizingSupplier.get(ExtensionValuesStore.java:205)\n\tat org.junit.jupiter.engine.execution.ExtensionValuesStore$StoredValue.evaluate(ExtensionValuesStore.java:182)\n\tat org.junit.jupiter.engine.execution.ExtensionValuesStore$StoredValue.access$100(ExtensionValuesStore.java:171)\n\tat org.junit.jupiter.engine.execution.ExtensionValuesStore.getOrComputeIfAbsent(ExtensionValuesStore.java:89)\n\tat org.junit.jupiter.engine.execution.NamespaceAwareStore.getOrComputeIfAbsent(NamespaceAwareStore.java:53)\n\tat org.testcontainers.junit.jupiter.TestcontainersExtension.lambda$beforeAll$2(TestcontainersExtension.java:59)\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\n\tat org.testcontainers.junit.jupiter.TestcontainersExtension.beforeAll(TestcontainersExtension.java:59)\n\tat org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeBeforeAllCallbacks$8(ClassBasedTestDescriptor.java:368)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeBeforeAllCallbacks(ClassBasedTestDescriptor.java:368)\n\tat org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:192)\n\tat org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:78)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:136)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)\n\tat org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.compute(ForkJoinPoolHierarchicalTestExecutorService.java:185)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.invokeAll(ForkJoinPoolHierarchicalTestExecutorService.java:129)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)\n\tat org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.compute(ForkJoinPoolHierarchicalTestExecutorService.java:185)\n\tat java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:189)\n\tat java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)\n\tat java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)\n\tat java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)\n\tat java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)\nCaused by: org.rnorth.ducttape.RetryCountExceededException: Retry limit hit with exception\n\tat org.rnorth.ducttape.unreliables.Unreliables.retryUntilSuccess(Unreliables.java:88)\n\tat org.testcontainers.containers.GenericContainer.doStart(GenericContainer.java:323)\n\t... 44 more\nCaused by: org.testcontainers.containers.ContainerLaunchException: Could not create/start container\n\tat org.testcontainers.containers.GenericContainer.tryStart(GenericContainer.java:498)\n\tat org.testcontainers.containers.GenericContainer.lambda$doStart$0(GenericContainer.java:325)\n\tat org.rnorth.ducttape.unreliables.Unreliables.retryUntilSuccess(Unreliables.java:81)\n\t... 45 more\nCaused by: java.lang.IllegalStateException: Container exited with code 1\n\tat org.testcontainers.containers.GenericContainer.tryStart(GenericContainer.java:470)\n\t... 47 more\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az121"
+  }, {
+    "name" : "thread",
+    "value" : "5187@fv-az121.ForkJoinPool-1-worker-1(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "com.github.javister.docker.testing.wildfly.HibernateIT"
+  }, {
+    "name" : "testClass",
+    "value" : "com.github.javister.docker.testing.wildfly.HibernateIT"
+  }, {
+    "name" : "suite",
+    "value" : "com.github.javister.docker.testing.wildfly.HibernateIT"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "a82fa38ed4e67b0d",
+        "reportUrl" : "https://javister.github.io/javister-docker-wildfly/1//#testresult/a82fa38ed4e67b0d",
+        "status" : "broken",
+        "statusDetails" : "Container startup failed",
+        "time" : {
+          "start" : 1600454630492,
+          "stop" : 1600454630495,
+          "duration" : 3
+        }
+      }, {
+        "uid" : "dec9546b91f1b3ea",
+        "reportUrl" : "https://javister.github.io/javister-docker-wildfly/1//#testresult/dec9546b91f1b3ea",
+        "status" : "broken",
+        "statusDetails" : "Container startup failed",
+        "time" : {
+          "start" : 1600452694164,
+          "stop" : 1600452694167,
+          "duration" : 3
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "f9250e424b6f52d3.json",
+  "parameterValues" : [ ]
+}
