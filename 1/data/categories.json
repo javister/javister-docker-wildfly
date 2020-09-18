@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Container startup failed",
+      "children" : [ {
+        "name" : "HibernateIT",
+        "uid" : "dec9546b91f1b3ea",
+        "parentUid" : "01ad759fdc26258e5c6e4d478c565f77",
+        "status" : "broken",
+        "time" : {
+          "start" : 1600452694164,
+          "stop" : 1600452694167,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "01ad759fdc26258e5c6e4d478c565f77"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}

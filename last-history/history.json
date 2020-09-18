@@ -1,0 +1,23 @@
+{
+  "3538193c456e6a6b2504deb27ca0c0eb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "dec9546b91f1b3ea",
+      "reportUrl" : "https://javister.github.io/javister-docker-wildfly/1//#testresult/dec9546b91f1b3ea",
+      "status" : "broken",
+      "statusDetails" : "Container startup failed",
+      "time" : {
+        "start" : 1600452694164,
+        "stop" : 1600452694167,
+        "duration" : 3
+      }
+    } ]
+  }
+}

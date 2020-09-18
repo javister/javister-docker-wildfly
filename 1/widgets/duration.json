@@ -1,0 +1,11 @@
+[ {
+  "uid" : "dec9546b91f1b3ea",
+  "name" : "HibernateIT",
+  "time" : {
+    "start" : 1600452694164,
+    "stop" : 1600452694167,
+    "duration" : 3
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

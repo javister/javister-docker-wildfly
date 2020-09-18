@@ -1,0 +1,22 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "com.github.javister.docker.testing.wildfly.HibernateIT",
+    "children" : [ {
+      "name" : "HibernateIT",
+      "uid" : "dec9546b91f1b3ea",
+      "parentUid" : "e8dd4e3da87984f259734afc18ee220f",
+      "status" : "broken",
+      "time" : {
+        "start" : 1600452694164,
+        "stop" : 1600452694167,
+        "duration" : 3
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e8dd4e3da87984f259734afc18ee220f"
+  } ],
+  "name" : "suites"
+}
