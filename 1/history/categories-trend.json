@@ -5,4 +5,11 @@
   "data" : {
     "Test defects" : 1
   }
+}, {
+  "buildOrder" : 1,
+  "reportUrl" : "https://javister.github.io/javister-docker-wildfly/1/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "Test defects" : 1
+  }
 } ]

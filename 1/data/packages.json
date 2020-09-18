@@ -4,12 +4,12 @@
     "name" : "com.github.javister.docker.testing.wildfly.HibernateIT",
     "children" : [ {
       "name" : "HibernateIT",
-      "uid" : "dec9546b91f1b3ea",
+      "uid" : "a82fa38ed4e67b0d",
       "parentUid" : "1d23b708eb73de6e88c98367f6db7c9c",
       "status" : "broken",
       "time" : {
-        "start" : 1600452694164,
-        "stop" : 1600452694167,
+        "start" : 1600454630492,
+        "stop" : 1600454630495,
         "duration" : 3
       },
       "flaky" : false,
