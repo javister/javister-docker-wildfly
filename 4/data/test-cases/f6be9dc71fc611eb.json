@@ -1,0 +1,80 @@
+{
+  "uid" : "f6be9dc71fc611eb",
+  "name" : "[1] FIREFOX",
+  "fullName" : "com.github.javister.docker.testing.wildfly.HibernateWildfly8SwitchyardModeshapeIT.testRegisterUsers",
+  "historyId" : "b2a1273aa5bc341bc879c7037bf7153d",
+  "time" : {
+    "start" : 1600513547546,
+    "stop" : 1600513613368,
+    "duration" : 65822
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e5f94a12422daf5b",
+      "name" : "PASSED-com.github.javister.docker.testing.wildfly.HibernateWildfly8SwitchyardModeshapeIT.testRegisterUsers-FIREFOX-20200919-110651.flv",
+      "source" : "e5f94a12422daf5b.flv",
+      "type" : "video/x-flv",
+      "size" : 1519616
+    }, {
+      "uid" : "9e60019c0cbfefc6",
+      "name" : "Stdout",
+      "source" : "9e60019c0cbfefc6.txt",
+      "type" : "text/plain",
+      "size" : 1962
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az76"
+  }, {
+    "name" : "thread",
+    "value" : "4791@fv-az76.ForkJoinPool-1-worker-1(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "com.github.javister.docker.testing.wildfly.HibernateWildfly8SwitchyardModeshapeIT"
+  }, {
+    "name" : "testClass",
+    "value" : "com.github.javister.docker.testing.wildfly.HibernateWildfly8SwitchyardModeshapeIT"
+  }, {
+    "name" : "testMethod",
+    "value" : "testRegisterUsers"
+  }, {
+    "name" : "suite",
+    "value" : "com.github.javister.docker.testing.wildfly.HibernateWildfly8SwitchyardModeshapeIT"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f6be9dc71fc611eb.json",
+  "parameterValues" : [ ]
+}
