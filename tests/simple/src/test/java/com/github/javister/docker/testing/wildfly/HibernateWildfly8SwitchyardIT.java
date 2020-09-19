@@ -15,13 +15,13 @@ import java.util.concurrent.atomic.AtomicInteger;
 import static org.junit.Assert.assertEquals;
 
 @Testcontainers
-class HibernateIT {
+class HibernateWildfly8SwitchyardIT {
     @Container
     private static final WildflyHibernateContainer application =
             new WildflyHibernateContainer(
                     JavisterOpenJDKContainer.Variant.V8,
-                    JavisterWildflyContainer.Variant.WILDFLY8,
-                    HibernateIT.class
+                    JavisterWildflyContainer.Variant.WILDFLY8_SWITCHYARD,
+                    HibernateWildfly8SwitchyardIT.class
             )
                     .withInstanceId("1")
             // Активировать, если надо поотлаживать приложение, стартуемое в контейнере
@@ -43,7 +43,7 @@ class HibernateIT {
     }
 
     @SuppressWarnings("squid:S2699")
-    @JavisterWebDriverProvider
+    @JavisterWebDriverProvider({JavisterWebDriverContainer.Browser.FIREFOX})
     void testRegisterUsers(JavisterWebDriverContainer webContainer) throws InterruptedException {
         WebDriver driver = webContainer.getWebDriver();
         driver.get(application.getURL());

@@ -37,7 +37,7 @@
         <javister-docker-openjdk8.version>1.2</javister-docker-openjdk8.version>
         <postgresql.version>1.4</postgresql.version>
         <wildfly-8.version>8.2.1.krista24</wildfly-8.version>
-        <bas-8.version>8.2.1.krista45</bas-8.version>
+        <bas-8.version>8.2.1.krista47</bas-8.version>
     </properties>
 
     <modules>
