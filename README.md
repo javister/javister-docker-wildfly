@@ -1,7 +1,10 @@
 # Сервер JBoss Wildfly 8
 
-[ ![Download](https://api.bintray.com/packages/javister/docker/javister%3Ajavister-docker-wildfly/images/download.svg) ](https://bintray.com/javister/docker/javister%3Ajavister-docker-wildfly/_latestVersion)
-[![Build Status](https://travis-ci.org/javister/javister-docker-wildfly.svg?branch=master)](https://travis-ci.org/javister/javister-docker-wildfly)
+[ ![Download](https://api.bintray.com/packages/javister/docker/javister%3Ajavister-docker-wildfly/images/download.svg?version=wildfly-8.2.1.krista24-jdk8-1.0) ](https://bintray.com/javister/docker/javister%3Ajavister-docker-wildfly/wildfly-8.2.1.krista24-jdk8-1.0/link)
+[ ![Download](https://api.bintray.com/packages/javister/docker/javister%3Ajavister-docker-wildfly/images/download.svg?version=bas-8.2.1.krista47-switchyard-jdk8-1.0) ](https://bintray.com/javister/docker/javister%3Ajavister-docker-wildfly/bas-8.2.1.krista47-switchyard-jdk8-1.0/link)
+[ ![Download](https://api.bintray.com/packages/javister/docker/javister%3Ajavister-docker-wildfly/images/download.svg?version=bas-8.2.1.krista47-switchyard.modeshape-jdk8-1.0) ](https://bintray.com/javister/docker/javister%3Ajavister-docker-wildfly/bas-8.2.1.krista47-switchyard.modeshape-jdk8-1.0/link)
+[ ![Download](https://api.bintray.com/packages/javister/dockertesting/javister-docker-wildfly/images/download.svg?version=1.0) ](https://bintray.com/javister/dockertesting/javister-docker-wildfly/1.0/link)
+![Build master branch](https://github.com/javister/javister-docker-wildfly/workflows/Build%20master%20branch/badge.svg)
 
 Данный образ базируется на образе [javister-docker-openjdk:1.0.java8](https://github.com/javister/javister-docker-openjdk).
 
