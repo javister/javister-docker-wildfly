@@ -1,0 +1,31 @@
+[ {
+  "uid" : "692d80770efc4757",
+  "name" : "[1] FIREFOX",
+  "time" : {
+    "start" : 1602052505859,
+    "stop" : 1602052517722,
+    "duration" : 11863
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7bd07bfa7801f86b",
+  "name" : "[1] FIREFOX",
+  "time" : {
+    "start" : 1602052554921,
+    "stop" : 1602052567109,
+    "duration" : 12188
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f3093843ad7eb400",
+  "name" : "[1] FIREFOX",
+  "time" : {
+    "start" : 1602052398634,
+    "stop" : 1602052467971,
+    "duration" : 69337
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

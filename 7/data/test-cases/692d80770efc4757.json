@@ -1,0 +1,118 @@
+{
+  "uid" : "692d80770efc4757",
+  "name" : "[1] FIREFOX",
+  "fullName" : "com.github.javister.docker.testing.wildfly.HibernateWildfly8IT.testRegisterUsers",
+  "historyId" : "739e590fdd7ec8c68e19486f237a42bf",
+  "time" : {
+    "start" : 1602052505859,
+    "stop" : 1602052517722,
+    "duration" : 11863
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e87e0521babe9c53",
+      "name" : "PASSED-com.github.javister.docker.testing.wildfly.HibernateWildfly8IT.testRegisterUsers-FIREFOX-20201007-063516.flv",
+      "source" : "e87e0521babe9c53.flv",
+      "type" : "video/x-flv",
+      "size" : 1130496
+    }, {
+      "uid" : "21f5f98723212cbd",
+      "name" : "Stdout",
+      "source" : "21f5f98723212cbd.txt",
+      "type" : "text/plain",
+      "size" : 1573
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az176"
+  }, {
+    "name" : "thread",
+    "value" : "5220@fv-az176.ForkJoinPool-1-worker-1(11)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "com.github.javister.docker.testing.wildfly.HibernateWildfly8IT"
+  }, {
+    "name" : "testClass",
+    "value" : "com.github.javister.docker.testing.wildfly.HibernateWildfly8IT"
+  }, {
+    "name" : "testMethod",
+    "value" : "testRegisterUsers"
+  }, {
+    "name" : "suite",
+    "value" : "com.github.javister.docker.testing.wildfly.HibernateWildfly8IT"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "b68e9bb6f559e6be",
+        "reportUrl" : "https://javister.github.io/javister-docker-wildfly/6//#testresult/b68e9bb6f559e6be",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600520041042,
+          "stop" : 1600520054766,
+          "duration" : 13724
+        }
+      }, {
+        "uid" : "633477440cc97605",
+        "reportUrl" : "https://javister.github.io/javister-docker-wildfly/5//#testresult/633477440cc97605",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600519737016,
+          "stop" : 1600519749242,
+          "duration" : 12226
+        }
+      }, {
+        "uid" : "7c7b3ddf9eb808c7",
+        "reportUrl" : "https://javister.github.io/javister-docker-wildfly/4//#testresult/7c7b3ddf9eb808c7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600513651851,
+          "stop" : 1600513665119,
+          "duration" : 13268
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "692d80770efc4757.json",
+  "parameterValues" : [ ]
+}
