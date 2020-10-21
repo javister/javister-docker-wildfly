@@ -1,0 +1,44 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "[1] FIREFOX",
+    "uid" : "2f915e3a974e2895",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1603269626187,
+      "stop" : 1603269693473,
+      "duration" : 67286
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "[1] FIREFOX",
+    "uid" : "ecaf26ab7aebf2de",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1603269737099,
+      "stop" : 1603269750483,
+      "duration" : 13384
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "[1] FIREFOX",
+    "uid" : "ca703ad3769e9a79",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1603269788201,
+      "stop" : 1603269801925,
+      "duration" : 13724
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ],
+  "name" : "behaviors"
+}
