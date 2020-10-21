@@ -111,19 +111,19 @@ public class JavisterWildflyContainer<SELF extends JavisterWildflyContainer<SELF
     }
 
     /**
-     * Возвращает HTTP адресс сервера приложений.
+     * Возвращает HTTP адрес сервера приложений.
      *
-     * @return HTTP адресс сервера приложений.
+     * @return HTTP адрес сервера приложений.
      */
     public String getURL() {
         return getURLInternal();
     }
 
     /**
-     * Возвращает HTTP адресс приложения.
+     * Возвращает HTTP адрес приложения.
      *
      * @param appPath путь приложения (зависит имени модуля деплоя).
-     * @return HTTP адресс приложения.
+     * @return HTTP адрес приложения.
      */
     protected final String getURL(String appPath) {
         return getURLInternal() + appPath;

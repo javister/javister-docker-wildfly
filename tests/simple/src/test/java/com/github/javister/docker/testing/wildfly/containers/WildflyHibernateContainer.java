@@ -30,8 +30,7 @@ public class WildflyHibernateContainer extends JavisterWildflyContainer<WildflyH
                         builder
                                 .from(JavisterBaseContainer.getImageName(JavisterWildflyContainer.class, wildflyVariant.getValue(jdkVariant)))
                                 .add("docker", "/")
-                                .run(/*"cat /app/wildfly/setup/app-setup.cli.template >> /app/wildfly/setup/setup.cli.template && " +*/
-                                        "chmod --recursive +x /etc/my_init.d/*.sh /etc/service /usr/local/bin")
+                                .run("chmod --recursive +x /etc/my_init.d/*.sh /etc/service /usr/local/bin")
                                 .env(new HashMap<String, String>() {{
                                     put("POSTGRES_ADDR", "postgres");
                                     put("POSTGRES_PORT", "5432");
