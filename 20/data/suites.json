@@ -1,0 +1,56 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "com.github.javister.docker.testing.wildfly.HibernateWildfly8IT",
+    "children" : [ {
+      "name" : "[1] FIREFOX",
+      "uid" : "48b60e41f50ac3a9",
+      "parentUid" : "e86d33b1b2e88afb67312368f5f6cf6a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603449710222,
+        "stop" : 1603449774580,
+        "duration" : 64358
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e86d33b1b2e88afb67312368f5f6cf6a"
+  }, {
+    "name" : "com.github.javister.docker.testing.wildfly.HibernateWildfly8SwitchyardModeshapeIT",
+    "children" : [ {
+      "name" : "[1] FIREFOX",
+      "uid" : "42fb71309620010a",
+      "parentUid" : "2352a2ee811c775a583ddb21d5f1fc5b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603449817996,
+        "stop" : 1603449831290,
+        "duration" : 13294
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "2352a2ee811c775a583ddb21d5f1fc5b"
+  }, {
+    "name" : "com.github.javister.docker.testing.wildfly.HibernateWildfly8SwitchyardIT",
+    "children" : [ {
+      "name" : "[1] FIREFOX",
+      "uid" : "8ad8442adcadb250",
+      "parentUid" : "29f7015f55f53780fb0d899f69af052c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603449868901,
+        "stop" : 1603449881665,
+        "duration" : 12764
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "29f7015f55f53780fb0d899f69af052c"
+  } ],
+  "name" : "suites"
+}
