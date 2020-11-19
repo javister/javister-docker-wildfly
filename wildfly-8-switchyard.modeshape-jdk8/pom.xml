@@ -15,7 +15,7 @@
 
     <properties>
         <openjdk-major.version>8</openjdk-major.version>
-        <wildfly.classifier>SwitchYard-Modeshape</wildfly.classifier>
+        <wildfly.classifier>SwitchYard-Modeshape5</wildfly.classifier>
         <wildfly.type>switchyard.modeshape</wildfly.type>
         <docker.tag>bas-${bas-8.version}-${wildfly.type}-jdk${openjdk-major.version}-${project.version}</docker.tag>
         <docker.cacheFrom>${docker.image}:${docker.tag}</docker.cacheFrom>
