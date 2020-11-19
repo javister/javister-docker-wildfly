@@ -29,7 +29,7 @@
     <properties>
         <!-- Project Version -->
         <revision>1.3</revision>
-        <changelist>-SNAPSHOT</changelist>
+        <changelist></changelist>
         <sha1/>
         <!-- Settings -->
         <docker.image.artifactId>javister-docker-wildfly</docker.image.artifactId>
