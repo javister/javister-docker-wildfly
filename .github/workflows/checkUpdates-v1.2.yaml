@@ -29,7 +29,7 @@ jobs:
       doRebuild: ${{ steps.result.outputs.doRebuild }}
     strategy:
       matrix:
-        variant: [ wildfly-8.2.1.krista22, bas-8.2.1.krista45-switchyard, bas-8.2.1.krista45-switchyard.modeshape ]
+        variant: [ wildfly-8.2.1.krista25, bas-8.2.1.krista48-switchyard, bas-8.2.1.krista48-switchyard.modeshape ]
         jdk: [ 8 ]
     steps:
       - name: Pull old Docker image v${{ matrix.variant }}
