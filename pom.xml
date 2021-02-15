@@ -34,10 +34,10 @@
         <!-- Settings -->
         <docker.image.artifactId>javister-docker-wildfly</docker.image.artifactId>
         <!-- Dependency versions -->
-        <javister-docker-openjdk8.version>1.5</javister-docker-openjdk8.version>
-        <postgresql.version>1.7</postgresql.version>
-        <wildfly-8.version>8.2.1.krista26</wildfly-8.version>
-        <bas-8.version>8.2.1.krista52</bas-8.version>
+        <javister-docker-openjdk8.version>1.7</javister-docker-openjdk8.version>
+        <postgresql.version>1.9</postgresql.version>
+        <wildfly-8.version>8.2.1.krista27</wildfly-8.version>
+        <bas-8.version>8.2.1.krista53</bas-8.version>
     </properties>
 
     <modules>
@@ -46,16 +46,13 @@
         <module>wildfly-8-jdk8</module>
         <module>testing</module>
         <module>tests</module>
-        <!--
-        <module>tests</module>
-        -->
     </modules>
 
     <distributionManagement>
         <repository>
-            <id>bintray-javister</id>
-            <name>javister-dockertesting</name>
-            <url>https://api.bintray.com/maven/javister/dockertesting/javister-docker-wildfly/;publish=1</url>
+            <id>krista-maven-public</id>
+            <name>Artifactori-external-releases</name>
+            <url>https://artifactory.krista.ru/artifactory/maven-javister-docker-wildfly</url>
         </repository>
     </distributionManagement>
 
@@ -63,17 +60,7 @@
         <repository>
             <id>central</id>
             <name>central</name>
-            <url>https://jcenter.bintray.com</url>
-        </repository>
-        <repository>
-            <id>bintray-javister-dockertesting</id>
-            <name>bintray</name>
-            <url>https://dl.bintray.com/javister/dockertesting</url>
-        </repository>
-        <repository>
-            <id>krista-oss</id>
-            <name>krista-oss</name>
-            <url>http://artifactory.krista.ru/artifactory/maven-krista-nexus-open-source</url>
+            <url>https://artifactory.krista.ru/artifactory/maven-public</url>
         </repository>
         <repository>
             <id>jitpack.io</id>
@@ -84,7 +71,7 @@
         <pluginRepository>
             <id>central</id>
             <name>central</name>
-            <url>https://jcenter.bintray.com</url>
+            <url>https://artifactory.krista.ru/artifactory/maven-public</url>
         </pluginRepository>
     </pluginRepositories>
 </project>

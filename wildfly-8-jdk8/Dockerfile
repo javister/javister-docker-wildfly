@@ -1,5 +1,5 @@
 ARG JAVISTER_OPENJDK_VERSION
-FROM javister-docker-docker.bintray.io/javister/javister-docker-openjdk:${JAVISTER_OPENJDK_VERSION} AS img-prepare
+FROM javister-ntp.artifactory-jcr.krista.ru/javister-docker-openjdk:${JAVISTER_OPENJDK_VERSION} AS img-prepare
 
 ARG WILDFLY_VERSION
 
@@ -7,7 +7,7 @@ COPY src/main/docker /zzz/
 ADD --chown=system:system target/dependency/wildfly-${WILDFLY_VERSION}/ /zzz/app/wildfly/
 RUN chmod --recursive a+r+w /zzz
 
-FROM javister-docker-docker.bintray.io/javister/javister-docker-openjdk:${JAVISTER_OPENJDK_VERSION}
+FROM javister-ntp.artifactory-jcr.krista.ru/javister-docker-openjdk:${JAVISTER_OPENJDK_VERSION}
 MAINTAINER Viktor Verbitsky <vektory79@gmail.com>
 
 COPY --from=img-prepare /zzz /
@@ -45,3 +45,4 @@ HEALTHCHECK --interval=10s --timeout=3s --start-period=3m \
     CMD healthcheck-wildfly.sh
 
 LABEL wildfly-version=$WILDFLY_VERSION
+STOPSIGNAL SIGINT
