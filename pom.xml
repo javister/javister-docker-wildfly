@@ -28,7 +28,7 @@
 
     <properties>
         <!-- Project Version -->
-        <revision>1.6</revision>
+        <revision>1.7</revision>
         <changelist>-SNAPSHOT</changelist>
         <sha1/>
         <!-- Settings -->
