@@ -1,0 +1,11 @@
+20:36:00.959 [34mINFO [0;39m - Selenium API version 3.141.59 detected on classpath 
+20:36:00.967 [34mINFO [0;39m - Creating container for image: selenium/standalone-firefox-debug:3.141.59 
+20:36:01.035 [34mINFO [0;39m - Starting container with ID: e32f18bad680bf79e2dca02ed28a5429e1ca2a62cf5abbd6c418ffc0e30365db 
+20:36:01.516 [34mINFO [0;39m - Container selenium/standalone-firefox-debug:3.141.59 is starting: e32f18bad680bf79e2dca02ed28a5429e1ca2a62cf5abbd6c418ffc0e30365db 
+20:36:04.664 [34mINFO [0;39m - Container selenium/standalone-firefox-debug:3.141.59 started in PT3.697S 
+20:36:06.983 [34mINFO [0;39m - Creating container for image: testcontainers/vnc-recorder:1.2.0 
+20:36:07.019 [34mINFO [0;39m - Starting container with ID: 85ef44ac757ec045784ef63f03d48b8cf7cd7269790f3976ba05297cdd6d4bf9 
+20:36:07.539 [34mINFO [0;39m - Container testcontainers/vnc-recorder:1.2.0 is starting: 85ef44ac757ec045784ef63f03d48b8cf7cd7269790f3976ba05297cdd6d4bf9 
+20:36:07.653 [34mINFO [0;39m - Container testcontainers/vnc-recorder:1.2.0 started in PT0.67S 
+20:36:07.697 [34mINFO [0;39m - Container DOCKER generate URL: http://08c5c8cfd6db:8080/ 
+20:36:12.545 [34mINFO [0;39m - Screen recordings for test com.github.javister.docker.testing.wildfly.HibernateWildfly8SwitchyardIT.testRegisterUsers-FIREFOX will be stored at: /home/runner/work/javister-docker-wildfly/javister-docker-wildfly/tests/simple/target/test-classes/../PASSED-com.github.javister.docker.testing.wildfly.HibernateWildfly8SwitchyardIT.testRegisterUsers-FIREFOX-20210215-203612.flv 
