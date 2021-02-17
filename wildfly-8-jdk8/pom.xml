@@ -20,6 +20,16 @@
         <openjdk-image.version>${openjdk-major.version}-${javister-docker-openjdk8.version}</openjdk-image.version>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.wildfly</groupId>
+            <artifactId>wildfly-dist</artifactId>
+            <version>${wildfly-8.version}</version>
+            <type>zip</type>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
     <build>
         <finalName>javister-docker-wildfly-8-jdk8</finalName>
         <plugins>

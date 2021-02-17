@@ -21,7 +21,18 @@
         <docker.cacheFrom>${docker.image}:${docker.tag}</docker.cacheFrom>
         <openjdk-image.version>${openjdk-major.version}-${javister-docker-openjdk8.version}</openjdk-image.version>
     </properties>
-    
+
+    <dependencies>
+        <dependency>
+            <groupId>ru.krista</groupId>
+            <artifactId>wildfly-bas</artifactId>
+            <version>${bas-8.version}</version>
+            <classifier>WF82-${wildfly.classifier}</classifier>
+            <type>zip</type>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
     <build>
         <finalName>javister-docker-wildfly-8-switchyard-jdk8</finalName>
         <plugins>
