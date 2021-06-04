@@ -1,0 +1,52 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "fv-az133-597",
+    "children" : [ {
+      "name" : "3625@fv-az133-597.ForkJoinPool-1-worker-1(11)",
+      "children" : [ {
+        "name" : "[1] FIREFOX",
+        "uid" : "70ced81cd53674de",
+        "parentUid" : "a92d06e40460da921aab8c6be1de2a00",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622788666273,
+          "stop" : 1622788686421,
+          "duration" : 20148
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "[1] FIREFOX",
+        "uid" : "cc56a3281dace619",
+        "parentUid" : "a92d06e40460da921aab8c6be1de2a00",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622788467013,
+          "stop" : 1622788571016,
+          "duration" : 104003
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "[1] FIREFOX",
+        "uid" : "cf2573c04e68f903",
+        "parentUid" : "a92d06e40460da921aab8c6be1de2a00",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622788607836,
+          "stop" : 1622788628649,
+          "duration" : 20813
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a92d06e40460da921aab8c6be1de2a00"
+    } ],
+    "uid" : "974ea3775f4a85ae7aaa7a13afcee101"
+  } ],
+  "name" : "timeline"
+}

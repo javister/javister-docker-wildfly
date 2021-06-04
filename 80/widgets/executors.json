@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://javister.github.io/javister-docker-wildfly",
+  "buildOrder" : 80,
+  "buildName" : "GitHub Actions Run #905320131",
+  "buildUrl" : "https://github.com/javister/javister-docker-wildfly/actions/runs/905320131",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://javister.github.io/javister-docker-wildfly/80/"
+} ]
