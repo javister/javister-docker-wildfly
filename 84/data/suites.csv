@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Jun 10 08:45:00 GMT 2021","Thu Jun 10 08:45:17 GMT 2021","16970","","com.github.javister.docker.testing.wildfly.HibernateWildfly8SwitchyardModeshapeIT","","com.github.javister.docker.testing.wildfly.HibernateWildfly8SwitchyardModeshapeIT","testRegisterUsers","[1] FIREFOX",""
+"passed","Thu Jun 10 08:44:06 GMT 2021","Thu Jun 10 08:44:23 GMT 2021","17014","","com.github.javister.docker.testing.wildfly.HibernateWildfly8IT","","com.github.javister.docker.testing.wildfly.HibernateWildfly8IT","testRegisterUsers","[1] FIREFOX",""
+"passed","Thu Jun 10 08:42:05 GMT 2021","Thu Jun 10 08:43:30 GMT 2021","85081","","com.github.javister.docker.testing.wildfly.HibernateWildfly8SwitchyardIT","","com.github.javister.docker.testing.wildfly.HibernateWildfly8SwitchyardIT","testRegisterUsers","[1] FIREFOX",""
