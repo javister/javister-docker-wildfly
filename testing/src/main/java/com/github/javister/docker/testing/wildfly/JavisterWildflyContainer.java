@@ -4,6 +4,7 @@ import com.github.javister.docker.testing.openjdk.JavisterOpenJDKContainer;
 import org.jetbrains.annotations.Nullable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.testcontainers.utility.DockerImageName;
 
 import java.io.File;
 import java.time.Duration;
@@ -44,6 +45,17 @@ public class JavisterWildflyContainer<SELF extends JavisterWildflyContainer<SELF
         init2();
     }
 
+    public JavisterWildflyContainer(
+            JavisterOpenJDKContainer.Variant jdkVariant,
+            JavisterWildflyContainer.Variant wildflyVariant,
+            DockerImageName dockerImageName,
+            File volumePath) {
+        super(jdkVariant, dockerImageName);
+        this.wildflyVariant = wildflyVariant;
+        this.volumePath = volumePath;
+        init2();
+    }
+    
     public JavisterWildflyContainer(
             JavisterOpenJDKContainer.Variant jdkVariant,
             JavisterWildflyContainer.Variant wildflyVariant,
