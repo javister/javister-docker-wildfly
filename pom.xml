@@ -38,12 +38,14 @@
         <postgresql.version>1.12</postgresql.version>
         <wildfly-8.version>8.2.1.krista27</wildfly-8.version>
         <bas-8.version>8.2.1.krista59</bas-8.version>
+        <wildfly-17.version>17.0.1.Final</wildfly-17.version>
     </properties>
 
     <modules>
         <module>wildfly-8-switchyard-jdk8</module>
         <module>wildfly-8-switchyard.modeshape-jdk8</module>
         <module>wildfly-8-jdk8</module>
+        <module>wildfly-17-jdk8</module>
         <module>testing</module>
         <module>tests</module>
     </modules>
