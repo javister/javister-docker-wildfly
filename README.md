@@ -22,6 +22,7 @@ ${wildfly.version}-${wildfly.layers}-${jdk.version}-${project.version}
     1. (Чистая, позиция не заполнена)
     2. SwitchYard
     3. SwitchYard.Modeshape5
+    4. light (L) - c минимальным набором модулей необходимых для запуска приложений Кристы.
 3. ${jdk.version} - Версии Java
     1. jdk8
     2. jdk11

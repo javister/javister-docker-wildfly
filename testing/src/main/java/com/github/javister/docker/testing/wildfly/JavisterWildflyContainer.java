@@ -200,6 +200,7 @@ public class JavisterWildflyContainer<SELF extends JavisterWildflyContainer<SELF
 
     public enum Variant {
         WILDFLY8("8"),
+        WILDFLY8_LIGHT("8-light"),
         WILDFLY8_SWITCHYARD("8-switchyard"),
         WILDFLY8_SWITCHYARD_MODESHAPE("8-switchyard-modeshape"),
         WILDFLY17("17");
