@@ -1,0 +1,60 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "com.github.javister.docker.testing.wildfly",
+    "children" : [ {
+      "name" : "HibernateWildfly8IT",
+      "children" : [ {
+        "name" : "testRegisterUsers",
+        "uid" : "464bb5fe17514d7f",
+        "parentUid" : "61b9ee833a458a283ef457ccfc08c924",
+        "status" : "passed",
+        "time" : {
+          "start" : 1645505516056,
+          "stop" : 1645505703102,
+          "duration" : 187046
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "61b9ee833a458a283ef457ccfc08c924"
+    }, {
+      "name" : "HibernateWildfly8SwitchyardIT",
+      "children" : [ {
+        "name" : "testRegisterUsers",
+        "uid" : "d043f5ecef718f31",
+        "parentUid" : "0a2bf0df71e09fe9a1caa694fd623262",
+        "status" : "passed",
+        "time" : {
+          "start" : 1645505759714,
+          "stop" : 1645505806475,
+          "duration" : 46761
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0a2bf0df71e09fe9a1caa694fd623262"
+    }, {
+      "name" : "HibernateWildfly8SwitchyardModeshapeIT",
+      "children" : [ {
+        "name" : "testRegisterUsers",
+        "uid" : "a422281f429c0935",
+        "parentUid" : "8f2d3cc4f0b6970155d47f871ca758a3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1645505862087,
+          "stop" : 1645505896105,
+          "duration" : 34018
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8f2d3cc4f0b6970155d47f871ca758a3"
+    } ],
+    "uid" : "com.github.javister.docker.testing.wildfly"
+  } ],
+  "name" : "packages"
+}
