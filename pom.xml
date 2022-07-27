@@ -35,7 +35,7 @@
         <docker.image.artifactId>javister-docker-wildfly</docker.image.artifactId>
         <!-- Dependency versions -->
         <javister-docker-openjdk8.version>1.8</javister-docker-openjdk8.version>
-        <postgresql.version>1.12</postgresql.version>
+        <postgresql.version>2.22</postgresql.version>
         <wildfly-8.version>8.2.1.krista30</wildfly-8.version>
         <bas-8.version>8.2.1.krista60</bas-8.version>
         <wildfly-8-light.version>8.2.1.krista30.L1</wildfly-8-light.version>
